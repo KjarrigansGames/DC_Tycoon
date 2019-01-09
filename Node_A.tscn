@@ -2,9 +2,10 @@
 
 [ext_resource path="res://Assets/Node_A.png" type="Texture" id=1]
 
-[node name="Node_A" type="Sprite"]
+[node name="Node_A" type="Sprite" index="0"]
 
 texture = ExtResource( 1 )
+offset = Vector2( 100, 20 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
 
