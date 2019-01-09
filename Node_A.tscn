@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/Node_A.png" type="Texture" id=1]
 
-[node name="Node_A" type="Sprite" index="0"]
+[node name="Node_A" type="Sprite"]
 
 texture = ExtResource( 1 )
 offset = Vector2( 100, 20 )
