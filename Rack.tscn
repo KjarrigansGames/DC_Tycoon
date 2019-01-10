@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Assets/Rack_A.png" type="Texture" id=1]
+[ext_resource path="res://Rack.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Rack_A.png" type="Texture" id=2]
 
-[node name="Rack" type="MarginContainer"]
+[node name="Rack" type="MarginContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -20,21 +21,22 @@ custom_constants/margin_right = 0
 custom_constants/margin_top = 0
 custom_constants/margin_left = 0
 custom_constants/margin_bottom = 0
+script = ExtResource( 1 )
 _sections_unfolded = [ "Anchor", "Margin", "Size Flags", "custom_constants" ]
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Rack_A" type="Sprite" parent="." index="0"]
+[node name="Image" type="Sprite" parent="." index="0"]
 
 position = Vector2( 99.5, 200.5 )
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 _sections_unfolded = [ "Animation", "Offset", "Transform" ]
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Rack_A" index="0"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Image" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
