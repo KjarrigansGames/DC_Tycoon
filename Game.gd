@@ -48,7 +48,7 @@ func add_rack(rack):
 	rack.anchor_bottom = 0.0
 	rack.anchor_right = 0.0
 	rack.anchor_top = 0.0
-	rack.margin_top = $Datacenter.rect_size.y - rack.height()
+	rack.margin_top = $Datacenter.rect_size.y - rack.height() - 10
 	rack.margin_left = (racks.size() * (rack.width() + 2)) + 10
 	rack.margin_right = rack.width()
 	racks.append(rack)
