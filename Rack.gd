@@ -13,3 +13,9 @@ func add_node(node):
 	
 func cost():
 	return 200
+	
+func height():
+	return max_nodes * 18.0 + 23
+	
+func width():
+	return 199
