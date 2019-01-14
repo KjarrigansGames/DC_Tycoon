@@ -23,6 +23,7 @@ func _tick():
 func pay_for(obj):
 	if enough_money_for(obj):
 		cash -= obj.cost()
+		$HUD.update_stats_panel()
 		return true
 	return false
 
