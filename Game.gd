@@ -81,3 +81,7 @@ func max_nodes():
 	for rack in racks:
 		sum += rack.max_nodes	
 	return sum	
+	
+func _input(event):
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().quit()
